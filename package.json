@@ -1,0 +1,16 @@
+{
+  "name": "cassidoo",
+  "version": "1.0.0",
+  "description": "Repository for housing interviewing challenges from cassidoo's weekly newsletter.",
+  "repository": "git@github.com:jrubins/cassidoo.git",
+  "author": "Jonathan Rubins <jonrubins@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "challenge": "ts-node"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  }
+}
