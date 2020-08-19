@@ -6,11 +6,26 @@
   "author": "Jonathan Rubins <jonrubins@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "challenge": "ts-node"
+    "challenge": "ts-node",
+    "test:watch": "yarn jest --bail --expand --verbose --watch"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix --cache --ext=.ts"
+    ]
   },
   "devDependencies": {
+    "@babel/core": "7.11.1",
+    "@babel/preset-env": "7.11.0",
+    "@babel/preset-typescript": "7.10.4",
+    "@types/jest": "26.0.10",
+    "@typescript-eslint/eslint-plugin": "3.9.0",
+    "@typescript-eslint/parser": "3.9.0",
+    "eslint": "7.7.0",
+    "jest": "26.4.0",
     "prettier": "2.0.5",
     "ts-node": "8.10.2",
-    "typescript": "3.9.5"
+    "typescript": "3.9.7"
   }
 }

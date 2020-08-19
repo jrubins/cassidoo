@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "incremental": true,
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "noImplicitAny": true,
+    "outDir": "./build",
+    "sourceMap": true,
     "strictNullChecks": true,
     "tsBuildInfoFile": "./.tsbuildinfo"
   },
-  "files": ["src/**/*"]
+  "include": ["src/**/*"]
 }

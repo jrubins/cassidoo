@@ -1,1 +1,5 @@
+# Caches.
+.jest-cache
+
+# Dependencies.
 node_modules
